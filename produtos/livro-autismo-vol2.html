@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Autismo Quando o Diagnóstico Chega Vol. 2 - Clínica Maestria. Livro com participação da Dra. Rute Santiago. Guia completo sobre autismo para famílias.">
+  <title>Autismo: Quando o Diagnóstico Chega Vol. 2 - Clínica Maestria</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/imagens/geral/favicon.svg">
+  <style>
+    .livro-hero {
+      background: linear-gradient(135deg, var(--cor-secundaria) 0%, #2D4A2D 100%);
+      color: var(--cor-branco);
+      padding: 140px 0 var(--espaco-xl);
+      position: relative;
+      overflow: hidden;
+    }
+    .livro-hero::after {
+      content: '';
+      position: absolute; bottom: -2px; left: 0; right: 0;
+      height: 60px; background: var(--cor-bege);
+      clip-path: ellipse(70% 100% at 50% 100%);
+    }
+    .livro-hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--espaco-xl);
+      align-items: center;
+    }
+    .livro-hero h1 {
+      color: var(--cor-branco);
+      font-size: 2.6rem;
+      margin-bottom: var(--espaco-sm);
+    }
+    .livro-hero p {
+      color: rgba(247, 244, 239, 0.9);
+      font-size: 1.1rem;
+      margin-bottom: var(--espaco-md);
+    }
+    .livro-hero-imagem {
+      border-radius: var(--raio-card);
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+      background: var(--cor-bege);
+      padding: var(--espaco-lg);
+      text-align: center;
+    }
+    .livro-hero-imagem svg {
+      width: 160px;
+      height: 160px;
+      fill: var(--cor-secundaria);
+      opacity: 0.3;
+    }
+    .autora-card {
+      background: var(--cor-branco);
+      border-radius: var(--raio-card);
+      padding: var(--espaco-md);
+      display: flex;
+      gap: var(--espaco-md);
+      align-items: center;
+      box-shadow: var(--sombra-suave);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .autora-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .autora-card-info h3 {
+      margin-bottom: 0.25rem;
+    }
+    .autora-card-info p {
+      color: var(--cor-cinza);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    .depoimento-livro {
+      background: var(--cor-branco);
+      border-radius: var(--raio-card);
+      padding: var(--espaco-md);
+      box-shadow: var(--sombra-suave);
+      position: relative;
+    }
+    .depoimento-livro::before {
+      content: '"';
+      font-family: var(--fonte-titulo);
+      font-size: 4rem;
+      color: var(--cor-primaria);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .depoimento-livro p {
+      font-style: italic;
+      color: var(--cor-cinza);
+      position: relative;
+      z-index: 1;
+      margin-bottom: var(--espaco-sm);
+    }
+    .depoimento-livro strong {
+      display: block;
+      font-style: normal;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .livro-hero .container { grid-template-columns: 1fr; }
+      .livro-hero h1 { font-size: 2rem; }
+      .livro-hero-imagem { order: -1; }
+      .autora-card { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="container">
+      <a href="../index.html" class="navbar-logo" aria-label="Clínica Maestria">
+        <img src="../assets/imagens/geral/logo.svg" alt="Logo Clínica Maestria" width="48" height="48">
+        <span>Clínica Maestria</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="../servicos/transtornos-neurodesenvolvimento/index.html">Serviços</a>
+        <a href="index.html">Produtos</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../equipe/index.html">Equipe</a>
+        <a href="../contato/index.html">Contato</a>
+        <button class="navbar-busca-toggle" id="busca-toggle" aria-label="Abrir pesquisa">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+        <a href="https://wa.me/5519996482242" target="_blank" rel="noopener" class="navbar-whatsapp">WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="search-bar" id="busca-barra">
+    <div class="container">
+      <div class="search-bar-inner">
+        <input type="text" id="busca-input" placeholder="Pesquisar no site..." aria-label="Pesquisar">
+        <button id="busca-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="index.html">Produtos</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Autismo: Quando o Diagnóstico Chega Vol. 2</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="livro-hero">
+      <div class="container">
+        <div>
+          <span class="tag" style="margin-bottom:var(--espaco-sm)">Livro Físico</span>
+          <h1>Autismo: Quando o Diagnóstico Chega Vol. 2</h1>
+          <p>Uma obra essencial que reúne relatos reais, ferramentas práticas e orientações de especialistas para acolher famílias no universo do autismo.</p>
+          <p style="color:rgba(247,244,239,0.8);font-size:1rem">Com participação da <strong>Dra. Rute Santiago</strong>, nossa CEO e idealizadora da Clínica Maestria.</p>
+          <div style="display:flex;gap:var(--espaco-sm);flex-wrap:wrap;margin-top:var(--espaco-md)">
+            <a href="https://www.clinicamaestria.com.br/loja-online/autismo-quando-o-diagn%C3%B3stico-chega-vol-2" target="_blank" rel="noopener" class="btn btn-bege">Garanta seu exemplar</a>
+            <a href="https://wa.me/5519996482242" target="_blank" rel="noopener" class="btn btn-secundario" style="border-color:var(--cor-bege);color:var(--cor-bege)">Fale conosco</a>
+          </div>
+        </div>
+        <div class="livro-hero-imagem">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/>
+          </svg>
+          <p style="color:var(--cor-secundaria);font-weight:600;margin-top:var(--espaco-sm);font-size:0.9rem">Autismo: Quando o Diagnóstico Chega - Vol. 2</p>
+          <p style="color:var(--cor-cinza);font-size:0.85rem;margin:0">Organizado por Literare Books</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-titulo">
+          <h2>Sobre o livro</h2>
+        </div>
+        <div style="max-width:800px;margin:0 auto">
+          <p><strong>"Autismo: Quando o Diagnóstico Chega - Volume 2"</strong> é uma obra colaborativa que reúne profissionais e especialistas para oferecer um olhar completo e humanizado sobre o Transtorno do Espectro Autista (TEA).</p>
+          <p>Organizado pela <strong>Literare Books</strong>, o livro aborda desde os primeiros sinais e o impacto do diagnóstico até as estratégias práticas para o dia a dia da família, da escola e da clínica.</p>
+          <p>A <strong>Dra. Rute Santiago</strong>, Fonoaudióloga (PUC) e Pedagoga (Unicamp), CEO da Clínica Maestria, é uma das coautoras desta obra, compartilhando sua vasta experiência no atendimento de crianças com TEA e suas famílias.</p>
+          <p>Com linguagem acessível e acolhedora, o livro é indicado para pais, familiares, educadores, terapeutas e todos que desejam compreender melhor o universo do autismo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--cor-branco)">
+      <div class="container">
+        <div class="section-titulo">
+          <h2>O que você vai encontrar</h2>
+        </div>
+        <div class="beneficios-grid">
+          <div class="beneficio-item animar">
+            <div class="beneficio-icone">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h4>Relatos Reais</h4>
+            <p>Histórias inspiradoras de famílias que compartilham suas jornadas de acolhimento e superação.</p>
+          </div>
+          <div class="beneficio-item animar">
+            <div class="beneficio-icone">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>Abordagem Multiprofissional</h4>
+            <p>Capítulos escritos por diferentes especialistas: fonoaudiólogos, psicólogos, terapeutas ocupacionais e mais.</p>
+          </div>
+          <div class="beneficio-item animar">
+            <div class="beneficio-icone">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h4>Orientações Práticas</h4>
+            <p>Estratégias aplicáveis no dia a dia para estimular a comunicação, regulação e aprendizagem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-titulo">
+          <h2>Conheça a Dra. Rute Santiago</h2>
+        </div>
+        <div class="autora-card animar">
+          <img src="../assets/imagens/geral/dra-rute.jpg" alt="Dra. Rute Santiago" width="120" height="120">
+          <div class="autora-card-info">
+            <h3>Dra. Rute Santiago</h3>
+            <span class="tag" style="margin-bottom:0.5rem">Coautora</span>
+            <p><strong>Fonoaudióloga (PUC) e Pedagoga (Unicamp)</strong>, a Dra. Rute Santiago une mais de uma década de experiência clínica em fala e linguagem à sua formação no magistério (CEFAM). É CEO da Clínica Maestria em Hortolândia/SP e coautora do livro "Autismo: Quando o Diagnóstico Chega - Vol. 2". Sua filosofia de atendimento parte da premissa de que <strong>cada criança tem um modo único de aprender</strong> — e nosso papel é identificar esse modo para otimizar sua evolução.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--cor-branco)">
+      <div class="container">
+        <div class="section-titulo">
+          <h2>O que dizem sobre a obra</h2>
+        </div>
+        <div style="max-width:600px;margin:0 auto">
+          <div class="depoimento-livro animar">
+            <p>Este livro é um abraço acolhedor para todas as famílias que recebem o diagnóstico de autismo. Cada capítulo traz conhecimento, mas também traz esperança.</p>
+            <strong>— Leitora Amazon</strong>
+          </div>
+          <div class="depoimento-livro animar" style="margin-top:var(--espaco-sm)">
+            <p>Uma obra que todo profissional que trabalha com TEA deveria ler. A diversidade de olhares enriquece e transforma nossa prática.</p>
+            <strong>— Profissional da Saúde</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Garanta seu exemplar com desconto exclusivo</h2>
+        <p>Clientes da Clínica Maestria têm condições especiais na compra do livro. Fale conosco e aproveite!</p>
+        <div style="display:flex;gap:var(--espaco-sm);justify-content:center;flex-wrap:wrap">
+          <a href="https://www.clinicamaestria.com.br/loja-online/autismo-quando-o-diagn%C3%B3stico-chega-vol-2" target="_blank" rel="noopener" class="btn btn-primario btn-bege">Comprar agora</a>
+          <a href="https://wa.me/5519996482242" target="_blank" rel="noopener" class="btn btn-secundario" style="border-color:var(--cor-bege);color:var(--cor-bege)">Pedir pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="../index.html" class="footer-logo">Clínica Maestria</a>
+          <p>Evolução com método e propósito. Cuidado multidisciplinar em Fonoaudiologia e Psicopedagogia para crianças e famílias em Hortolândia/SP.</p>
+          <div class="footer-social" style="margin-top:var(--espaco-sm)">
+            <a href="https://www.instagram.com/maestriaclinicahortolandia" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+            </a>
+            <a href="https://wa.me/5519996482242" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.56-.2 1.08-.31.63-.94 1.11-1.53 1.11-.48 0-1.17-.27-2.67-.99-1.8-.86-2.95-2.33-3.04-2.44-.09-.11-.72-.96-.72-1.83 0-.87.46-1.3.62-1.48.16-.18.35-.18.46-.18h.33c.12 0 .31-.02.48.36.22.5.74 1.8.81 1.93.07.13.12.28.03.46s-.13.28-.25.42c-.12.14-.25.3-.12.56.13.26.58.95 1.24 1.54.85.76 1.57 1 1.8 1.11.22.11.35.09.48-.05.13-.14.58-.68.73-.92.16-.23.31-.2.52-.12.21.08 1.33.63 1.56.74zM12 2C6.48 2 2 6.48 2 12c0 2.19.61 4.24 1.67 6l-1.1 3.9 3.99-1.08C8.29 21.63 10.11 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.85 0-3.6-.55-5.06-1.49l-.36-.22-2.45.66.66-2.38-.24-.38A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <a href="../servicos/transtornos-neurodesenvolvimento/autismo.html">Autismo (TEA)</a><br>
+          <a href="../servicos/transtornos-neurodesenvolvimento/tdah.html">TDAH</a><br>
+          <a href="../servicos/dificuldades-comunicacao/atraso-troca-fala.html">Atraso na Fala</a><br>
+          <a href="../servicos/dificuldades-aprendizagem/dislexia.html">Dislexia</a><br>
+          <a href="../servicos/dificuldades-aprendizagem/discalculia.html">Discalculia</a><br>
+          <a href="../servicos/especialidades-integradas/fonoaudiologia.html">Fonoaudiologia</a><br>
+          <a href="../servicos/especialidades-integradas/psicopedagogia.html">Psicopedagogia</a>
+        </div>
+        <div class="footer-col">
+          <h4>Produtos</h4>
+          <a href="index.html">Todos os produtos</a><br>
+          <a href="curso-alfabetizacao-multissensorial.html">Curso Alfabetização</a><br>
+          <a href="ebook-portal-autonomia-azul.html">E-book Portal Autonomia Azul</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-contato">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>R. 7 de Setembro, 493<br>Parque Ortolândia, Hortolândia/SP</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>(19) 99648-2242</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>contato@maestriaclinica.com.br</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Clínica Maestria. CNPJ: 52.668.454/0001-39. Todos os direitos reservados.</span>
+        <div>
+          <a href="../politica-de-privacidade.html">Política de Privacidade</a> | <a href="../termos-de-uso.html">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/menu.js" defer></script>
+</body>
+</html>

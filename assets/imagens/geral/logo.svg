@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <style>
+      .logo-leaf { fill: #A4D097; }
+      .logo-text { fill: #3F5E3F; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; }
+      .logo-sub { fill: #8AB4C9; font-family: 'Nunito', sans-serif; font-size: 8px; font-weight: 600; }
+    </style>
+  </defs>
+  <g transform="translate(5,5)">
+    <path class="logo-leaf" d="M25 25 C25 10 35 0 50 0 C40 2 32 8 28 20 C26 28 25 35 25 25Z" transform="translate(-5,5)"/>
+    <path class="logo-leaf" d="M25 25 C25 10 35 0 50 0 C40 2 32 8 28 20 C26 28 25 35 25 25Z" transform="translate(5,15) scale(0.85)"/>
+    <circle cx="25" cy="22" r="18" fill="none" stroke="#A4D097" stroke-width="2.5"/>
+    <circle cx="25" cy="22" r="10" fill="none" stroke="#A4D097" stroke-width="1.5"/>
+    <path d="M25 8 L25 36 M11 22 L39 22" stroke="#A4D097" stroke-width="1.5"/>
+  </g>
+  <text x="58" y="28" class="logo-text" font-size="18">Clínica Maestria</text>
+  <text x="58" y="44" class="logo-sub">Fonoaudiologia & Psicopedagogia</text>
+</svg>

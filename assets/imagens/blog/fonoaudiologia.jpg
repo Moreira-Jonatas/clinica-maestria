@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8AB4C9;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#3F5E3F;stop-opacity:0.08" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#F7F4EF"/>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g transform="translate(400,240)" text-anchor="middle">
+    <circle cx='-15' cy='-15' r='20' fill='#8AB4C9' opacity='0.2'/><circle cx='20' cy='-15' r='20' fill='#8AB4C9' opacity='0.15'/><path d='M-15 10 Q-30 30-10 25 Q0 30 10 15 Q25 30 35 10' fill='none' stroke='#3F5E3F' stroke-width='2' opacity='0.3'/>
+  </g>
+  <text x="400" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="600" fill="#3F5E3F">Fonoaudiologia</text>
+  <text x="400" y="370" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#9C9A97">Fala e linguagem</text>
+  <text x="400" y="580" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9C9A97" opacity="0.5">Clínica Maestria placeholder</text>
+</svg>

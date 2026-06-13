@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8AB4C9;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#3F5E3F;stop-opacity:0.08" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#F7F4EF"/>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g transform="translate(400,240)" text-anchor="middle">
+    <path d='M0-50 Q30-50 40-25 Q50 0 35 20 Q20 40 0 35 Q-20 40-35 20 Q-50 0-40-25 Q-30-50 0-50Z' fill='#8AB4C9' opacity='0.2'/><path d='M0-35 Q10-15 5 0 Q0 15-5 0 Q-10-15 0-35Z' fill='#3F5E3F' opacity='0.3'/>
+  </g>
+  <text x="400" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="600" fill="#3F5E3F">TDAH</text>
+  <text x="400" y="370" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#9C9A97">Atenção e hiperatividade</text>
+  <text x="400" y="580" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9C9A97" opacity="0.5">Clínica Maestria placeholder</text>
+</svg>
