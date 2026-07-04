@@ -1,0 +1,9 @@
+*.ps1
+*.txt
+*.md
+thumbs.db
+.DS_Store
+node_modules/
+.vscode/
+*.log
+*.tmp
