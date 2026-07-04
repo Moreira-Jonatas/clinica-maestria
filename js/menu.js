@@ -17,25 +17,33 @@ function buildNavbar() {
   if (!linksContainer) return;
 
   const depth = getDepth();
-  const existingLabels = new Set();
-  linksContainer.querySelectorAll('a[href^="index"]:not([href*="//"]), a[href*="/"]:not([href*="//"]):not([href^="http"]):not([href^="#"]), a[href^="../"], a[href^="../../"]').forEach(a => {
-    if (a.textContent.trim()) existingLabels.add(a.textContent.trim());
+  const buscaToggle = linksContainer.querySelector('.navbar-busca-toggle');
+  const whatsApp = linksContainer.querySelector('.navbar-whatsapp');
+
+  linksContainer.querySelectorAll('a:not([href*="//"]):not([href^="http"]):not([href^="#"]).navbar-whatsapp, a[href]:not([href*="//"]):not([href^="http"]):not([href^="#"]):not([href^="javascript"])').forEach(a => {
+    const label = a.textContent.trim();
+    const isNavLink = MENU_ITEMS.some(m => m.label === label);
+    if (isNavLink && a.parentNode === linksContainer) {
+      a.remove();
+    }
   });
 
   MENU_ITEMS.forEach(item => {
-    if (!existingLabels.has(item.label)) {
-      const href = depth > 0 ? '../'.repeat(depth) + item.href : item.href;
-      const a = document.createElement('a');
-      a.href = href;
-      a.textContent = item.label;
-      const ref = linksContainer.querySelector('.navbar-busca-toggle');
-      if (ref) {
-        linksContainer.insertBefore(a, ref);
-      } else {
-        linksContainer.appendChild(a);
-      }
+    const href = depth > 0 ? '../'.repeat(depth) + item.href : item.href;
+    const a = document.createElement('a');
+    a.href = href;
+    a.textContent = item.label;
+    if (buscaToggle) {
+      linksContainer.insertBefore(a, buscaToggle);
+    } else {
+      linksContainer.appendChild(a);
     }
   });
+
+  if (whatsApp && buscaToggle) {
+    linksContainer.appendChild(buscaToggle);
+    linksContainer.appendChild(whatsApp);
+  }
 }
 
 function getDepth() {
