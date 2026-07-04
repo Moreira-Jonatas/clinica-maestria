@@ -1,91 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Produtos Clínica Maestria - Cursos, livros e e-books para famílias e profissionais. Alfabetização Multissensorial, Autismo e Direitos dos Autistas em Hortolândia/SP.">
   <title>Produtos - Clínica Maestria</title>
   <link rel="stylesheet" href="../css/global.css">
-  <link rel="icon" type="image/svg+xml" href="../assets/imagens/geral/favicon.svg">
-  <style>
-    .produto-card {
-      background: var(--cor-branco);
-      border-radius: var(--raio-card);
-      overflow: hidden;
-      box-shadow: var(--sombra-suave);
-      transition: var(--transicao);
-      display: flex;
-      flex-direction: column;
-    }
-    .produto-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--sombra-media);
-    }
-    .produto-card-imagem {
-      height: 240px;
-      overflow: hidden;
-      background: var(--cor-bege);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: var(--espaco-md);
-    }
-    .produto-card-imagem svg {
-      width: 80px;
-      height: 80px;
-      fill: var(--cor-secundaria);
-      opacity: 0.6;
-    }
-    .produto-card-conteudo {
-      padding: var(--espaco-md);
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .produto-card-conteudo h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-    .produto-card-conteudo p {
-      font-size: 0.9rem;
-      color: var(--cor-cinza);
-      margin-bottom: var(--espaco-sm);
-      flex: 1;
-    }
-    .produto-card-conteudo .btn {
-      align-self: flex-start;
-    }
-    .produtos-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--espaco-md);
-    }
-    .tag-produto {
-      display: inline-block;
-      background: var(--cor-azul);
-      color: var(--cor-branco);
-      padding: 0.2rem 0.7rem;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    @media (max-width: 1024px) {
-      .produtos-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 768px) {
-      .produtos-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/produtos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/imagens/geral/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/imagens/geral/apple-touch-icon.png">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Pular para o conteudo principal</a>
 
   <nav class="navbar" role="navigation" aria-label="Navegação principal">
     <div class="container">
       <a href="../index.html" class="navbar-logo" aria-label="Clínica Maestria - Página inicial">
-        <img src="../assets/imagens/geral/logo.svg" alt="Logo Clínica Maestria" width="48" height="48">
+        <img src="../assets/imagens/geral/LOGO.PNG" alt="Logo Clínica Maestria" width="48" height="48">
         <span>Clínica Maestria</span>
       </a>
       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
@@ -131,7 +64,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="page-header">
       <div class="container">
         <h1>Nossos Produtos</h1>
@@ -205,7 +138,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="../index.html" class="footer-logo">Clínica Maestria</a>
-          <p>Evolução com método e propósito. Cuidado multidisciplinar em Fonoaudiologia e Psicopedagogia para crianças e famílias em Hortolândia/SP.</p>
+          <p>Evolução com método e propósito. Cuidado multidisciplinar em Fonoaudiologia e Pedagogia para crianças e famílias em Hortolândia/SP.</p>
           <div class="footer-social" style="margin-top:var(--espaco-sm)">
             <a href="https://www.instagram.com/maestriaclinicahortolandia" target="_blank" rel="noopener" aria-label="Instagram">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
@@ -223,7 +156,7 @@
           <a href="../servicos/dificuldades-aprendizagem/dislexia.html">Dislexia</a><br>
           <a href="../servicos/dificuldades-aprendizagem/discalculia.html">Discalculia</a><br>
           <a href="../servicos/especialidades-integradas/fonoaudiologia.html">Fonoaudiologia</a><br>
-          <a href="../servicos/especialidades-integradas/psicopedagogia.html">Psicopedagogia</a>
+          <a href="../servicos/especialidades-integradas/psicopedagogia.html">Pedagogia</a>
         </div>
         <div class="footer-col">
           <h4>Produtos</h4>

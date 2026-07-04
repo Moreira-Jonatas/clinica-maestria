@@ -1,0 +1,98 @@
+﻿================================================================
+  LOG FINAL DE COPIA DE IMAGENS - MAESTRIA CLINICA
+  Data: 29/06/2026 15:17:19
+================================================================
+
+
+===================== RESUMO =====================
+  Total de imagens copiadas: 46
+  Total de imagens ainda faltantes: 13
+  Total de arquivos extras (nao mapeados): 5
+
+
+========== IMAGENS COPIADAS COM SUCESSO ==========
+
+--- Grupo 1: Das pasta fonte -> servicos/ E blog/ (9 imagens x 2) ---
+  psicopedagogia.png -> servicos/psicopedagogia/psicopedagogia.jpg
+  psicopedagogia.png -> blog/psicopedagogia.jpg
+  acompanhante-terapeutica.png -> servicos/acompanhante-terapeutica/acompanhante-terapeutica.jpg
+  acompanhante-terapeutica.png -> blog/acompanhante-terapeutica.jpg
+  assistente-terapeutica.png -> servicos/assistente-terapeutica/assistente-terapeutica.jpg
+  assistente-terapeutica.png -> blog/assistente-terapeutica.jpg
+  fonoaudiologia.png -> servicos/fonoaudiologia/fonoaudiologia.jpg
+  fonoaudiologia.png -> blog/fonoaudiologia.jpg
+  nutricionista.png -> servicos/nutricionista/nutricionista.jpg
+  nutricionista.png -> blog/nutricionista.jpg
+  psicologia-aba.png -> servicos/psicologia-aba/psicologia-aba.jpg
+  psicologia-aba.png -> blog/psicologia-aba.jpg
+  neuropsicologia.png -> servicos/neuropsicologia/neuropsicologia.jpg
+  neuropsicologia.png -> blog/neuropsicologia.jpg
+  terapia-ocupacional.png -> servicos/terapia-ocupacional/terapia-ocupacional.jpg
+  terapia-ocupacional.png -> blog/terapia-ocupacional.jpg
+  fisioterapia.png -> servicos/fisioterapia/fisioterapia.jpg
+  fisioterapia.png -> blog/fisioterapia.jpg
+
+--- Grupo 2: Das pasta fonte -> somenta equipe/ ---
+  placeholder-equipe.png -> equipe/placeholder-equipe.jpg
+
+--- Grupo 3:  Exemplo para artigo de mapeados manualmente ---
+  Exemplo para artigo de Autismo.png -> blog/blog-autismo.jpg
+  Exemplo para artigo de Autismo.png -> blog/autismo.jpg
+  Exemplo para artigo de Autismo.png -> servicos/autismo/autismo.jpg
+  Exemplo para artigo de TDAH.png -> blog/tdah.jpg
+  Exemplo para artigo de TDAH.png -> servicos/tdah/tdah.jpg
+
+--- Grupo 4: Banner Principal do Blog ---
+  Banner Principal do Blog.png -> blog/banner-principal.jpg
+
+--- Grupo 5: Variantes 1 das especialidades ---
+  acompanhante-terapeutica1.png -> servicos/acompanhante-terapeutica/acompanhante-terapeutica1.jpg
+  fisioterapia1.png -> servicos/fisioterapia/fisioterapia1.jpg
+  fonoaudiologia1.png -> servicos/fonoaudiologia/fonoaudiologia1.jpg
+
+--- Grupo 6: PNGs antigos do blog/ convertidos para JPG e servicos/ ---
+  blog/apraxia.png -> blog/apraxia.jpg + servicos/apraxia/apraxia.jpg
+  blog/atraso-fala.png -> blog/atraso-fala.jpg + servicos/atraso-fala/atraso-fala.jpg
+  blog/compreensao.png -> blog/compreensao.jpg + servicos/compreensao/compreensao.jpg
+  blog/dificuldade-aprendizagem.png -> blog/dificuldade-aprendizagem.jpg + servicos/dificuldade-aprendizagem/dificuldade-aprendizagem.jpg
+  blog/discalculia.png -> blog/discalculia.jpg + servicos/discalculia/discalculia.jpg
+  blog/dislexia.png -> blog/dislexia.jpg + servicos/dislexia/dislexia.jpg
+  blog/gagueira.png -> blog/gagueira.jpg + servicos/gagueira/gagueira.jpg
+  blog/memoria.png -> blog/memoria.jpg + servicos/memoria/memoria.jpg
+  blog/motricidade-oral.png -> blog/motricidade-oral.jpg + servicos/motricidade-oral/motricidade-oral.jpg
+
+========== ARQUIVOS EXTRAS SEM MAPEAMENTO ==========
+  (na pasta fonte, mas sem destino definido)
+
+  assistente-terapeutica -1.png
+  neuropsicologia -1.png
+  placeholder-equipe 1.png
+  placeholder-equipe2.png
+  placeholder-equipe20260628_191151_0_UTC_0.png
+  placeholder-equipe20260628_191433_0_UTC_0.png
+  placeholder-equipe20260628_192025_0_UTC_0.png
+  placeholder-equipe20260628_193702_0_UTC_0.png
+
+========== IMAGENS AINDA FALTANTES ==========
+  (nenhum arquivo fonte encontrado em lugar nenhum)
+
+--- servicos/ (precisa de imagem em servicos/NOME/NOME.jpg) ---
+  1. servicos/sindrome-down/sindrome-down.jpg
+  2. servicos/sindromes-raras/sindromes-raras.jpg
+
+--- blog/ (precisa de imagem em blog/NOME.jpg) ---
+  3. blog/sindrome-down.jpg
+  4. blog/sindromes-raras.jpg
+  5. blog/aulas-grupos-pequenos.jpg
+  6. blog/blog-dislexia.jpg
+  7. blog/blog-fala.jpg
+  8. blog/drenagem-linfatica.jpg
+  9. blog/massagem-relaxante.jpg
+
+--- geral/ (precisa de imagem em geral/NOME.jpg) ---
+  10. geral/depoimento1.jpg
+  11. geral/depoimento2.jpg
+  12. geral/depoimento3.jpg
+  13. geral/hero-home.jpg
+
+================================================================

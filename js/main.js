@@ -15,14 +15,20 @@ function initNavbar() {
 
   if (toggle && links) {
     toggle.addEventListener('click', function() {
+      const isOpen = links.classList.toggle('ativo');
       this.classList.toggle('ativo');
-      links.classList.toggle('ativo');
+      this.setAttribute('aria-expanded', isOpen);
+      if (isOpen) {
+        const firstLink = links.querySelector('a, button');
+        if (firstLink) firstLink.focus();
+      }
     });
 
     document.querySelectorAll('.navbar-links a').forEach(link => {
       link.addEventListener('click', () => {
         toggle.classList.remove('ativo');
         links.classList.remove('ativo');
+        toggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -79,14 +85,59 @@ function initForm() {
   if (form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+
+      const nome = document.getElementById('nome');
+      const email = document.getElementById('email');
+      const mensagem = document.getElementById('mensagem');
       const btn = this.querySelector('.btn');
       const originalText = btn.textContent;
-      btn.textContent = 'Mensagem enviada!';
-      btn.style.background = '#A4D097';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        this.reset();
-      }, 3000);
+
+      // Validação básica
+      if (!nome.value.trim() || !email.value.trim() || !mensagem.value.trim()) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+
+      if (!email.value.includes('@') || !email.value.includes('.')) {
+        alert('Por favor, informe um e-mail válido.');
+        return;
+      }
+
+      btn.textContent = 'Enviando...';
+      btn.disabled = true;
+
+      const formData = new FormData(this);
+
+      fetch('https://formspree.io/f/SEU_FORM_ID', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        if (response.ok) {
+          btn.textContent = 'Mensagem enviada!';
+          btn.style.background = '#A4D097';
+          this.reset();
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        } else {
+          throw new Error('Erro no envio');
+        }
+      })
+      .catch(() => {
+        btn.textContent = 'Erro ao enviar';
+        btn.style.background = '#D45A5A';
+        btn.style.color = '#fff';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.disabled = false;
+        }, 3000);
+      });
     });
   }
 }
@@ -121,9 +172,17 @@ function initBuscaSite() {
 
   toggle.addEventListener('click', function(e) {
     e.stopPropagation();
-    bar.classList.toggle('visivel');
-    if (bar.classList.contains('visivel')) {
+    const aberta = bar.classList.toggle('visivel');
+    if (aberta) {
       input.focus();
+    }
+  });
+
+  // Fechar busca com Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && bar.classList.contains('visivel')) {
+      bar.classList.remove('visivel');
+      toggle.focus();
     }
   });
 
